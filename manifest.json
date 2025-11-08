@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "YT Downloader",
+  "version": "1.0",
+
+  "description": "Adds convienent Youtube download buttons, for videos and playlists",
+
+  "icons": {
+    "96": "Icons/Icon_96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com//*"],
+      "js": ["Main.js"]
+    }
+  ]
+}
